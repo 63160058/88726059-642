@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form_reserve.html</title>
+        <h1 align="left">Hotel Booking</h1>
+        <br>
+    </head>
+    <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
+        <table>
+            <tr>
+                <th align="left"><label for="roomtype">Room Type:</label></th>
+                <th align="left">
+                    <select name="roomtype" style="width: 345px;">
+                    <option>Please Select</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Luxury">Luxury</option>
+                    <option value="Deluxe">Deluxe</option>
+                    </select>
+
+
+                </th>
+            </tr>
+            <tr>
+                <th align="left"><label for="numguest">Number of Guests:</label></th>
+                <th align="left">
+                    <select name="numguest" style="width: 345px;" >
+                        <option >Please Select</option>
+                        <option value="1-2">1-2</option>
+                        <option value="3-4">3-4</option>
+                        <option value="5-6">5-6</option>
+                        <option value="7-8">7-8</option>
+                        </select>
+                </tr>
+                <tr>
+                    <th align="left"><label for="fame">Name:</label></th>
+                    <th align="left"><input type="text" name="fname" id="fname" placeholder="First">
+                                     <input type="text" name="lname" id="lname" placeholder="Last">   
+                    </th>
+                    <tr>
+                        <th align="left"><label for="email">Email:</label></th>
+                        <th align="left"><input type="email" name="email" id="email" placeholder="john@company.com" style="width: 339px;"></th>
+                        </tr>
+                        <tr>
+                            <th align="left"><label for="arrivaldate">Arrival:</label></th>
+                            <th align="left"><input type="date" name="arrivaldate" id="arrivaldate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                             <input type="time" name="arrivaltime" id="arrivaltime">
+                                    </th>
+                            </tr>
+                            <tr>
+                                <th align="left"><label for="departuredate">Departurn:</label></th>
+                                <th align="left"><input type="date" name="departuredate" id="departuredate">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                 <input type="time" name="departuretime" id="departuretime">
+                                </th>
+                                </tr>
+                                <tr>
+                                    <th align="left"><label for="pickup">Free Pickup:</label></th>
+                                    <th align="left"><input type="radio" name="pickup" id="pickup" value="Yes">Yes, Sure!
+                                    </br>
+                                        <input type="radio" name="pickup" id="pickup" value="No" >No, I already rented car.
+                                    </br>
+
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th align="left"><label for="flightnum">Flight Number:</label></th>
+                                </br>
+                                    <th align="left"><input type="text" name="flightnum" id="flightnum" placeholder="C1209">
+                                        </th>
+                                </tr>
+                                <tr>
+                                    <th align="left"><label for="otherreq">Other requests:</label></th>
+                                    <th align="left">
+                                        </br>
+                                    <textarea name="otherreq" id="otherreq" rows="5" cols="50"></textarea>
+                                    </br>
+                                </br>
+                                    <input type="submit" value="Complete Reservation">
+                                </th>
+                                </tr>
+
+
+        </table>
+    </form>
+
+    </html>
