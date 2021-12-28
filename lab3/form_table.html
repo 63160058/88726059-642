@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+        <title>form_table.html </title>
+        <h1 align="left">Form demo</h1>
+        <br>
+    </head>
+    <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
+    <table>
+        <tr>
+            <th align="left"><label for=name>ชื่อ-นามสกุล:</label></th>
+            <th align="left"><input type="text" name="name" id="name"></th>
+            </tr>
+            <tr>
+                <th align="left"><label for="password">รหัสผ่าน:</label></th>
+                <th align="left"><input type="password" name="password" id="password"></th>
+            </tr>
+            <tr>
+                <th align="left"><label for="sex">เพศ:</label></th>
+                <th align="left"><input type="radio" name="sex" id="sex" value="M">ชาย
+                                 <input type="radio" name="sex" id="sex" value="F">หญิง
+                                </th>
+            </tr>
+            <tr>
+                <th align="left"><label for="choice">งานอดิเรก:</label></th>
+                <th align="left">
+                <input type="checkbox" name="choice" id="choice1" value="1">ดูหนัง
+                <input type="checkbox" name="choice" id="choice2" value="2">ฟังเพลง
+                <input type="checkbox" name="choice" id="choice3" value="3">เล่นเกม
+            </th>
+                </tr>
+                <tr>
+                    <th align="left"><label for="emotion">ความรู้สึกตอนนี้:</label></th>
+                    <th align="left">
+                        <select  name="emotion">
+                            <option value="0">--Select one--</option>
+                            <option value="1">Happy</option>
+                            <option value="2">Sad</option>
+                            <option value="3">Fun</option>
+                            </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th align="left"><label for="comment">ข้อเสนอแนะ:</label></th>
+                    <th align="left">
+                        <textarea name="comment" id="comment" rows="5" cols="50"></textarea>
+                        <pe align="center">
+                        </br>
+                    </br>
+                            <input type="submit" value="Send">
+                            <input type="reset" value="Clear">
+                    </th>
+                </tr>
+    </table>
+</form>
